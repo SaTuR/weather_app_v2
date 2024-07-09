@@ -45,5 +45,9 @@ def logout():
     session.clear()
     return redirect(url_for('login'))
 
+@app.route("/change_password")
+def change_password():
+    pass
+
 if __name__ == "__main__":
     app.run(debug=True)
